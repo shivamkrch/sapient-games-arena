@@ -19,7 +19,7 @@ class Games extends Component {
       console.log(games[1]);
       return;
     }
-    fetch("/sapient-games-arena/data/games.json")
+    fetch("/data/games.json")
       .then((res) => res.json())
       .then((games) => {
         this.setState({ games });
